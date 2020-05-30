@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/0.obj-c146b1bed875bd549c5cb4158b394c6e.mesh"
+
+[deps]
+
+files=[ "res://.import/0.obj-c146b1bed875bd549c5cb4158b394c6e.mesh" ]
+
+source_file="res://Models/archer/attack/0.obj"
+dest_files=[ "res://.import/0.obj-c146b1bed875bd549c5cb4158b394c6e.mesh", "res://.import/0.obj-c146b1bed875bd549c5cb4158b394c6e.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( -0.95, -2, 0.95 )
+optimize_mesh=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/0.obj-77d1ba529f9f8fd604dc37233ee8b399.mesh"
+
+[deps]
+
+files=[ "res://.import/0.obj-77d1ba529f9f8fd604dc37233ee8b399.mesh" ]
+
+source_file="res://Models/mage/attack/0.obj"
+dest_files=[ "res://.import/0.obj-77d1ba529f9f8fd604dc37233ee8b399.mesh", "res://.import/0.obj-77d1ba529f9f8fd604dc37233ee8b399.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( -0.95, -2, 0.95 )
+optimize_mesh=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/0.obj-696228d364c81180d016352ded00cb7d.mesh"
+
+[deps]
+
+files=[ "res://.import/0.obj-696228d364c81180d016352ded00cb7d.mesh" ]
+
+source_file="res://Models/dragon/0.obj"
+dest_files=[ "res://.import/0.obj-696228d364c81180d016352ded00cb7d.mesh", "res://.import/0.obj-696228d364c81180d016352ded00cb7d.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( -2, -2, 2 )
+optimize_mesh=true

@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/1.obj-a1e5c01188091fc3381c3df8d631d795.mesh"
+
+[deps]
+
+files=[ "res://.import/1.obj-a1e5c01188091fc3381c3df8d631d795.mesh" ]
+
+source_file="res://Models/knight/idle/1.obj"
+dest_files=[ "res://.import/1.obj-a1e5c01188091fc3381c3df8d631d795.mesh", "res://.import/1.obj-a1e5c01188091fc3381c3df8d631d795.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( -0.95, -2, 0.95 )
+optimize_mesh=true

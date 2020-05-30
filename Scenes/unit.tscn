@@ -1,0 +1,330 @@
+[gd_scene load_steps=63 format=2]
+
+[ext_resource path="res://Scripts/Unit.cs" type="Script" id=1]
+[ext_resource path="res://Models/solder/idle/0.obj" type="ArrayMesh" id=2]
+[ext_resource path="res://Models/solder/idle/1.obj" type="ArrayMesh" id=3]
+[ext_resource path="res://Models/solder/attack/1.obj" type="ArrayMesh" id=4]
+[ext_resource path="res://Models/solder/attack/4.obj" type="ArrayMesh" id=5]
+[ext_resource path="res://Models/solder/attack/3.obj" type="ArrayMesh" id=6]
+[ext_resource path="res://Models/solder/attack/0.obj" type="ArrayMesh" id=7]
+[ext_resource path="res://Models/solder/attack/2.obj" type="ArrayMesh" id=8]
+[ext_resource path="res://Models/solder/move/3.obj" type="ArrayMesh" id=9]
+[ext_resource path="res://Models/solder/move/2.obj" type="ArrayMesh" id=10]
+[ext_resource path="res://Models/solder/move/1.obj" type="ArrayMesh" id=11]
+[ext_resource path="res://Models/solder/move/0.obj" type="ArrayMesh" id=12]
+[ext_resource path="res://Materials/main_m.tres" type="Material" id=13]
+[ext_resource path="res://Materials/health_bar_m.tres" type="Material" id=14]
+[ext_resource path="res://Models/knight/idle/1.obj" type="ArrayMesh" id=15]
+[ext_resource path="res://Models/knight/idle/0.obj" type="ArrayMesh" id=16]
+[ext_resource path="res://Models/knight/attack/0.obj" type="ArrayMesh" id=17]
+[ext_resource path="res://Models/knight/attack/4.obj" type="ArrayMesh" id=18]
+[ext_resource path="res://Models/knight/attack/3.obj" type="ArrayMesh" id=19]
+[ext_resource path="res://Models/knight/attack/2.obj" type="ArrayMesh" id=20]
+[ext_resource path="res://Models/knight/attack/1.obj" type="ArrayMesh" id=21]
+[ext_resource path="res://Models/knight/move/1.obj" type="ArrayMesh" id=22]
+[ext_resource path="res://Models/knight/move/0.obj" type="ArrayMesh" id=23]
+[ext_resource path="res://Models/knight/move/2.obj" type="ArrayMesh" id=24]
+[ext_resource path="res://Models/knight/move/3.obj" type="ArrayMesh" id=25]
+[ext_resource path="res://Models/mage/attack/0.obj" type="ArrayMesh" id=26]
+[ext_resource path="res://Models/archer/attack/0.obj" type="ArrayMesh" id=27]
+[ext_resource path="res://Models/archer/idle/0.obj" type="ArrayMesh" id=28]
+[ext_resource path="res://Models/archer/idle/1.obj" type="ArrayMesh" id=29]
+[ext_resource path="res://Models/mage/idle/0.obj" type="ArrayMesh" id=30]
+[ext_resource path="res://Models/mage/idle/1.obj" type="ArrayMesh" id=31]
+[ext_resource path="res://Models/mage/move/3.obj" type="ArrayMesh" id=32]
+[ext_resource path="res://Models/mage/move/2.obj" type="ArrayMesh" id=33]
+[ext_resource path="res://Models/mage/move/1.obj" type="ArrayMesh" id=34]
+[ext_resource path="res://Models/mage/move/0.obj" type="ArrayMesh" id=35]
+[ext_resource path="res://Models/archer/move/0.obj" type="ArrayMesh" id=36]
+[ext_resource path="res://Models/archer/move/1.obj" type="ArrayMesh" id=37]
+[ext_resource path="res://Models/archer/move/2.obj" type="ArrayMesh" id=38]
+[ext_resource path="res://Models/archer/move/3.obj" type="ArrayMesh" id=39]
+[ext_resource path="res://Models/dragon/0.obj" type="ArrayMesh" id=40]
+[ext_resource path="res://Models/dragon/1.obj" type="ArrayMesh" id=41]
+[ext_resource path="res://Models/dragon/2.obj" type="ArrayMesh" id=42]
+[ext_resource path="res://Models/dragon/5.obj" type="ArrayMesh" id=43]
+[ext_resource path="res://Models/dragon/3.obj" type="ArrayMesh" id=44]
+[ext_resource path="res://Models/dragon/4.obj" type="ArrayMesh" id=45]
+
+[sub_resource type="Animation" id=1]
+resource_name = "archer_attack"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:mesh")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ ExtResource( 27 ) ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "archer_idle"
+length = 0.8
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:mesh")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ ExtResource( 28 ), ExtResource( 29 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "archer_move"
+length = 0.6
+loop = true
+step = 0.15
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:mesh")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.15, 0.3, 0.45 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "dragon"
+length = 1.2
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:mesh")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.4, 0.6, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 43 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+resource_name = "knight_attack"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:mesh")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ ExtResource( 17 ), ExtResource( 21 ), ExtResource( 20 ), ExtResource( 19 ), ExtResource( 18 ) ]
+}
+
+[sub_resource type="Animation" id=6]
+resource_name = "knight_idle"
+length = 0.8
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:mesh")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 0.90125, 1 ),
+"update": 0,
+"values": [ ExtResource( 16 ), ExtResource( 15 ) ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "knight_move"
+length = 0.6
+loop = true
+step = 0.15
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:mesh")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.15, 0.3, 0.45 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ ExtResource( 23 ), ExtResource( 22 ), ExtResource( 24 ), ExtResource( 25 ) ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_name = "mage_attack"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:mesh")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ ExtResource( 26 ) ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "mage_idle"
+length = 0.8
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:mesh")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ ExtResource( 30 ), ExtResource( 31 ) ]
+}
+
+[sub_resource type="Animation" id=10]
+resource_name = "mage_move"
+length = 0.6
+loop = true
+step = 0.15
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:mesh")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.15, 0.3, 0.45 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ ExtResource( 35 ), ExtResource( 34 ), ExtResource( 33 ), ExtResource( 32 ) ]
+}
+
+[sub_resource type="Animation" id=11]
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:mesh")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ ExtResource( 7 ), ExtResource( 4 ), ExtResource( 8 ), ExtResource( 6 ), ExtResource( 5 ) ]
+}
+
+[sub_resource type="Animation" id=12]
+length = 0.8
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:mesh")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ ExtResource( 2 ), ExtResource( 3 ) ]
+}
+
+[sub_resource type="Animation" id=13]
+length = 0.6
+loop = true
+step = 0.15
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:mesh")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.15, 0.3, 0.45 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ ExtResource( 12 ), ExtResource( 11 ), ExtResource( 10 ), ExtResource( 9 ) ]
+}
+
+[sub_resource type="CylinderShape" id=14]
+radius = 0.3
+height = 2.6
+
+[sub_resource type="CylinderShape" id=15]
+radius = 2.0
+height = 8.0
+
+[sub_resource type="SphereShape" id=16]
+radius = 4.0
+
+[sub_resource type="CubeMesh" id=17]
+size = Vector3( 1.5, 0.1, 0.1 )
+
+[node name="Unit" type="KinematicBody"]
+collision_layer = 4
+collision_mask = 7
+script = ExtResource( 1 )
+
+[node name="Model" type="MeshInstance" parent="."]
+transform = Transform( 2.5, 0, 0, 0, 2.5, 0, 0, 0, 2.5, 0, 0, 0 )
+material_override = ExtResource( 13 )
+mesh = ExtResource( 2 )
+material/0 = null
+
+[node name="APlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../Model")
+anims/archer_attack = SubResource( 1 )
+anims/archer_idle = SubResource( 2 )
+anims/archer_move = SubResource( 3 )
+anims/dragon = SubResource( 4 )
+anims/knight_attack = SubResource( 5 )
+anims/knight_idle = SubResource( 6 )
+anims/knight_move = SubResource( 7 )
+anims/mage_attack = SubResource( 8 )
+anims/mage_idle = SubResource( 9 )
+anims/mage_move = SubResource( 10 )
+anims/solder_attack = SubResource( 11 )
+anims/solder_idle = SubResource( 12 )
+anims/solder_move = SubResource( 13 )
+
+[node name="Collider" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.3, 0 )
+shape = SubResource( 14 )
+
+[node name="ARange" type="Area" parent="."]
+collision_layer = 0
+collision_mask = 0
+
+[node name="Collider" type="CollisionShape" parent="ARange"]
+shape = SubResource( 15 )
+
+[node name="VRange" type="Area" parent="."]
+collision_layer = 0
+collision_mask = 0
+
+[node name="Collider" type="CollisionShape" parent="VRange"]
+shape = SubResource( 16 )
+
+[node name="HealthBar" type="MeshInstance" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0 )
+material_override = ExtResource( 14 )
+mesh = SubResource( 17 )
+material/0 = null

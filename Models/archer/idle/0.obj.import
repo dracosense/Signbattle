@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/0.obj-6dea882092d8c6866c169e32a6f08308.mesh"
+
+[deps]
+
+files=[ "res://.import/0.obj-6dea882092d8c6866c169e32a6f08308.mesh" ]
+
+source_file="res://Models/archer/idle/0.obj"
+dest_files=[ "res://.import/0.obj-6dea882092d8c6866c169e32a6f08308.mesh", "res://.import/0.obj-6dea882092d8c6866c169e32a6f08308.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( -0.95, -2, 0.95 )
+optimize_mesh=true

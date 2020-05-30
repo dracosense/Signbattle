@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/mine.obj-bf25ac8426f70d3adb0480b25e997507.mesh"
+
+[deps]
+
+files=[ "res://.import/mine.obj-bf25ac8426f70d3adb0480b25e997507.mesh" ]
+
+source_file="res://Models/mine.obj"
+dest_files=[ "res://.import/mine.obj-bf25ac8426f70d3adb0480b25e997507.mesh", "res://.import/mine.obj-bf25ac8426f70d3adb0480b25e997507.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( -2, -2, 2 )
+optimize_mesh=true

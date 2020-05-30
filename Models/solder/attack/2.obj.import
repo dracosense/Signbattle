@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/2.obj-29307e7dc117a7593a22b199a4ddc8b2.mesh"
+
+[deps]
+
+files=[ "res://.import/2.obj-29307e7dc117a7593a22b199a4ddc8b2.mesh" ]
+
+source_file="res://Models/solder/attack/2.obj"
+dest_files=[ "res://.import/2.obj-29307e7dc117a7593a22b199a4ddc8b2.mesh", "res://.import/2.obj-29307e7dc117a7593a22b199a4ddc8b2.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( -0.95, -2, 0.95 )
+optimize_mesh=true

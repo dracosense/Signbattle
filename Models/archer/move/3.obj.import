@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/3.obj-2b48703c11378c154f049c6f923baebc.mesh"
+
+[deps]
+
+files=[ "res://.import/3.obj-2b48703c11378c154f049c6f923baebc.mesh" ]
+
+source_file="res://Models/archer/move/3.obj"
+dest_files=[ "res://.import/3.obj-2b48703c11378c154f049c6f923baebc.mesh", "res://.import/3.obj-2b48703c11378c154f049c6f923baebc.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( -0.95, -2, 0.95 )
+optimize_mesh=true

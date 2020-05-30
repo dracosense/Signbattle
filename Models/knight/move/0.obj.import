@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/0.obj-5a3a23b81d599c374e0db72b0e0ae28a.mesh"
+
+[deps]
+
+files=[ "res://.import/0.obj-5a3a23b81d599c374e0db72b0e0ae28a.mesh" ]
+
+source_file="res://Models/knight/move/0.obj"
+dest_files=[ "res://.import/0.obj-5a3a23b81d599c374e0db72b0e0ae28a.mesh", "res://.import/0.obj-5a3a23b81d599c374e0db72b0e0ae28a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( -0.95, -2, 0.95 )
+optimize_mesh=true

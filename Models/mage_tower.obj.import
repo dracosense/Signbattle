@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/mage_tower.obj-10c5fc0b1b4bbe60973a6515ee94604c.mesh"
+
+[deps]
+
+files=[ "res://.import/mage_tower.obj-10c5fc0b1b4bbe60973a6515ee94604c.mesh" ]
+
+source_file="res://Models/mage_tower.obj"
+dest_files=[ "res://.import/mage_tower.obj-10c5fc0b1b4bbe60973a6515ee94604c.mesh", "res://.import/mage_tower.obj-10c5fc0b1b4bbe60973a6515ee94604c.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( -2, -2, 2 )
+optimize_mesh=true

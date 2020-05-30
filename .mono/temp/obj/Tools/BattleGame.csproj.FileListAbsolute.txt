@@ -1,0 +1,5 @@
+E:\projects\Godot\BattleGame\.mono\temp\bin\Tools\BattleGame.dll
+E:\projects\Godot\BattleGame\.mono\temp\bin\Tools\BattleGame.pdb
+E:\projects\Godot\BattleGame\.mono\temp\obj\Tools\BattleGame.csprojAssemblyReference.cache
+E:\projects\Godot\BattleGame\.mono\temp\obj\Tools\BattleGame.dll
+E:\projects\Godot\BattleGame\.mono\temp\obj\Tools\BattleGame.pdb

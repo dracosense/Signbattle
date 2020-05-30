@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/stone_tower.obj-4925898e13970e8ce1ef5d7344fb0f30.mesh"
+
+[deps]
+
+files=[ "res://.import/stone_tower.obj-4925898e13970e8ce1ef5d7344fb0f30.mesh" ]
+
+source_file="res://Models/stone_tower.obj"
+dest_files=[ "res://.import/stone_tower.obj-4925898e13970e8ce1ef5d7344fb0f30.mesh", "res://.import/stone_tower.obj-4925898e13970e8ce1ef5d7344fb0f30.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( -2, -2, 2 )
+optimize_mesh=true
